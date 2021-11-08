@@ -26,11 +26,19 @@
             <input type="email" name="email_address" id="email_address">
         </div>
         <div>
-            <label for="birthday" Birthday></label>
+            <label for="password">Password: *</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="confrim_password">Confirm Password: *</label>
+            <input type="confirm_password" name="confirm_password" id="confirm_password">
+        </div>
+        <div>
+            <label for="birthday">Birthday:</label>
             <input type="date" name="birthday" id="birthday">
         </div>
         <div>
-            <p>Gender Identity</p>
+            <p>Gender Identity:</p>
             <input type="radio" name="gender" id="male" value="male">
             <label for="male">Male</label>
             <input type="radio" name="gender" id="female" value="female">
@@ -42,9 +50,27 @@
         </div>
         <div>
             <p>A short description about myself:</p>
-            <input type="text" name="description" id="description" size="15">
+            <textarea name="description" id="description" cols="30" rows="5"></textarea>
         </div>
+        <div>
+            <label for="favorite_language">Favorite Language></label>
+            <select name="favorite_language" id="favorite_language">
+            <option value="javascript">Javascript</option>
+            <option value="python">Python</option>
+            <option value="c++">C++</option>
+            <option value="c#">C#</option>
+            <option value="go">Go</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="accept" id="accept">
+            <label for="accept">Yes, I would like to receive periodic email updates<label>
+        </div>
+        <div>
             <input type="submit" value="Create Account">
+        </div>
+        <div><label for="required">* Indicates a required field</label>
+        </div>
     </form>
 </body>
 
